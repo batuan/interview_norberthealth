@@ -1,0 +1,1 @@
+clang++ -std=c++17 -stdlib=libc++ findcontour.cpp -o findcontour --debug -I/opt/homebrew/Cellar/opencv/4.5.4_3/include/opencv4 -L/opt/homebrew/Cellar/opencv/4.5.4_3/lib `pkg-config --cflags --libs opencv4`
