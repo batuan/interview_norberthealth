@@ -1,3 +1,19 @@
+Subject:
+
+Dessiner le contour de la personne présente sur chaque image infrarouge (IR)
+
+Bonus: Estimer la température de la personne
+(valeur d'un pixel IR = 100 * température, cette dernière exprimée en Kelvin)
+
+Informations utiles:
+Le nom de chaque fichier image correspond au timestamp auquel il a été généré. Pour cela, le même nom est utilisé dans les différents dossiers ('IR'. 'screenshots', 'temperature') pour des fichiers associés à la même scène.
+Les screenshots (contenus dans le dossier "screenshots") vous permettront de visualiser la correspondance RGB - IR, mais ils ne doivent pas être utilisés !
+Pensez bien à spécifier le flag approprié dans la fonction cv::imread() pour lire les images IR.
+Vous devez pouvoir visualiser les images IR comme dans les screenshots.
+Les fichiers température ont été dénommés d'après les fichiers IR et correspondent à la température mesurée par un appareil de référence (exprimée en Celsius). 
+Notez que la température donnée par l'image IR sera toujours inférieure à la température de référence.
+
+
 1. Contour detection
 
 - For the reading image, Because of the IR image use integer 16bit to store the pixel. 
